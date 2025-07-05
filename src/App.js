@@ -3,6 +3,7 @@ import './App.css';
 import { Navbar } from './Components/Navbar/Navbar';
 import { BrowserRouter,Routes,Route } from 'react-router-dom';
 import { ShopCategory } from './Pages/ShopCategory';
+import {Shop} from './Pages/Shop';
 import { Hero } from './Components/Hero/Hero';
 import { Link } from 'react-router-dom'; // Add this line
 function App() {
