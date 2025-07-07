@@ -5,7 +5,7 @@ export const ShopCategory = () => {
   return (
     <div>
         <Hero/>
-         <Popular/>
+         
     </div>
   )
 }

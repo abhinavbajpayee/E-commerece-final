@@ -9,10 +9,11 @@ import { Link } from 'react-router-dom'; // Add this line
 function App() {
   return (
     <div >
+      
       <BrowserRouter>
      <Navbar/>
      <Routes>
-      <Route path='/'element={<shop/>}/>
+      <Route path='/'element={<Shop/>}/>
       <Route path='/mens'element={<ShopCategory category="men"/>}/>
       <Route path='/womens'element={<ShopCategory category="women"/>}/>
       <Route path='/kids'element={<ShopCategory category="kid"/>}/>
