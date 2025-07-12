@@ -1,31 +1,109 @@
-.loginsignup{
-    width:100%;
+/* Overall container for the login/signup page */
+.loginsignup {
+    width: 100%;
     height: 80vh;
-    background: #fce3fe;
+    /* Changed background from pink to a soft, neutral grey */
+    background: #eac0e7;
     padding-top: 100px;
 }
-.loginsignup-container{
-    width:500px;
-    height:600px;
-    background: white;
-    margin:auto;
-    padding: 40ppx 60px;
+
+/* Central container for the form */
+.loginsignup-container {
+    width: 800px;
+    height: 500px;
+    /* Keeps the background white for a clean look */
+    background: #ffffff;
+    margin: auto;
+    padding: 40px 60px;
+    /* Added a subtle, light shadow for a modern feel */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    /* Added rounded corners */
+    border-radius: 8px;
 }
-.loginsignup-container h1{
-    margin:20px 0px ;
+
+/* Heading style */
+.loginsignup-container h1 {
+    margin: 10px 0px;
+    /* Changed font and centered the text */
+    font-family: 'Segoe UI', 'Roboto', sans-serif;
+    text-align: center;
+    /* Changed text color to a dark grey */
+    color: #333333;
 }
-.loginsignup-fields{
+
+/* Container for input fields */
+.loginsignup-fields {
     display: flex;
     flex-direction: column;
     gap: 29px;
     margin-top: 30px;
 }
-.loginsignup-fields input{
-    height:72px;
-    width: 100%;
+
+/* Styling for input fields */
+.loginsignup-fields input {
+    height: 72px;
+    /* Added padding for a cleaner look */
     padding-left: 20px;
-    border: 1px solid #c9c9c9;
-    outline: none;
-    color:#5c5c5c;
+    /* Removed align-items, it's not a valid property for inputs */
+    align-items: center; 
+    /* Changed border from red to a subtle grey and added rounded corners */
+    border: 1px solid #cccccc;
+    border-radius: 8px;
+    background: #ffffff;
     font-size: 18px;
+}
+
+/* Additional styling for inputs (placeholder and focus) */
+.loginsignup-fields input {
+    outline: none;
+    /* Placeholder color is now a subtle grey */
+    color: #999999; 
+}
+
+/* Styling for the continue button */
+.loginsignup-container button {
+    width: 580px;
+    height: 72px;
+    /* Changed button background from red to a professional blue */
+    background: red;
+    color: white;
+    margin-top: 30px;
+    border: none;
+    font-size: 24px;
+    font-weight: 500;
+    cursor: pointer;
+    /* Added rounded corners and a smooth transition effect */
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+}
+
+/* Hover effect for the button */
+.loginsignup-container button:hover {
+    background-color: #357ae8;
+}
+
+/* Styling for the login link text */
+.loginsignup-login {
+    margin-top: 20px;
+    /* Changed text color to a neutral grey */
+    color: #666666;
+    font-size: 18px;
+    font-weight: 500;
+    text-align: center;
+}
+
+/* Styling for the 'Login here' span */
+.loginsignup-login span {
+    /* Changed the accent color from red to the new blue */
+    color: #4285F4; 
+    font-weight: 600;
+}
+.loginsignup-agree{
+    display: flex;
+    align-items: center;
+    margin-top: 25px;
+    gap: 20px;
+    color: #5c5c5c;
+    font-size: 18px;
+    font-weight: 500;
 }
